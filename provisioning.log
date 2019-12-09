@@ -1,0 +1,41 @@
+
+La partizone non esiste
+quindi la creo
+n
+sda3 non esiste: provo a crearla 
+Disk /dev/sda: 20 GiB, 21474836480 bytes, 41943040 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x31d18c10
+
+Device     Boot    Start      End  Sectors  Size Id Type
+/dev/sda1  *        2048   976895   974848  476M 83 Linux
+/dev/sda2         978942 20969471 19990530  9.5G  5 Extended
+/dev/sda3       20969472 41943039 20973568   10G 8e Linux LVM
+/dev/sda5         978944 20969471 19990528  9.5G 8e Linux LVM
+
+Partition table entries are not in disk order.
+
+
+Disk /dev/mapper/vg-lv_root: 8.6 GiB, 9235857408 bytes, 18038784 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/vg-lv_swap: 952 MiB, 998244352 bytes, 1949696 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+sda3 creata 
+  Physical volume "/dev/sda3" successfully created
+  Volume group "vg" successfully extended
+  Size of logical volume vg/lv_root changed from 8.60 GiB (2202 extents) to 18.60 GiB (4762 extents).
+  Logical volume lv_root successfully resized.
+Filesystem at /dev/vg/lv_root is mounted on /; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 2
+The filesystem on /dev/vg/lv_root is now 4876288 (4k) blocks long.
+
